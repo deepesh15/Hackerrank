@@ -1,11 +1,13 @@
 lst = []
 for _ in range(int(input())):
-    #eval('lst.{0}({1})'.format(*input().split()+['']+['']))
     text = input().split()
     cmd = text[0]
     para = text[1:]
-    eval('lst.{0}({1})'.format(cmd,para))
-
+    if cmd != 'print':
+        cmd += "("+",".join(para)+"+"
+        eval("lst."+cmd)
+    else:
+        print lst
 '''
 
 n = input()
