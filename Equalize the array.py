@@ -17,9 +17,9 @@ else:
     print(count)
     print(m)
     
+# this code doesn't work for list with all unique elements
 '''
 
-import  collections as col
 
 n = int(input())
 lst = list(map(int,input().split()))
